@@ -27,6 +27,7 @@ Another cool thing is: if we want to still use a Flex component, but we need tha
 
 Typescript Types
 To create a new component, we need to declare a interface, a contract, to what possible props that component could use, we can take for example the input component as well. By creating a InputProps, we declared all new types that we want to use, but we still need to declare alll default props that the input element needs to use, a possible solution for that is extending our interface, for it to have all of input props as well as our new ones
+Another thing to pay attention is, when we declare an interface, and we need to declare a "path" and not a icon directly for example, we need to declare proptype as "ElementType"
 
 React-Icon library
 this library is simple , it works simply as a icon library, using it with chakra UI we can include it by the same method with "as" inside a component, but instead of adapting to a new html element, we adapt to receive the icon, importing the Icon component from chakra
