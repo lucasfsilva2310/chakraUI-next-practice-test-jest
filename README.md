@@ -40,3 +40,7 @@ options -
 series - type of data that will be represented, and the data itself, like : { name: 'series', data: [1,4,6]}
 OBS: when we´re using next.js, we need to find a way to just use this library inside the browser, as we know next run a sort of back end node server when its rendering the basic html, so if the browser window does not exist yet, this library will return an error similar to "window not defined". for that, we can use dinamyc, from next/dinamyc, and we import Chart using this import, for example "const Chart = dynamic(() => import('react-apexcharts'), {ssr: false})"
 So from now on, this library will only be imported later on (the ssr(server-side-rendering) value ensure that this lib will not be used on the server side)
+
+interesting fact:
+ReactNode ( props that we use sometimes inside a context for example), is used for javascript basically, for logic, we use children as javascript
+ReactElement is used when we´re going to insert components inside children
